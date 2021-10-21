@@ -10,6 +10,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 export class AgregarComponent  {
 
+
   miFormulario: FormGroup = this.fb.group({
     nombre: [ '', Validators.required ]
   });
