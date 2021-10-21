@@ -11,14 +11,23 @@
              formControlName="nombre">
     </div>
     <div class="col-auto">
-      <span error-msg *ngIf="tieneError('nombre')"></span>
+      <span error-msg
+            [color]="color"
+            [mensaje]="texto"
+            *ngIf="tieneError('nombre')"></span>
     </div>
   </div>
 
   <div class="row mt-3">
     <div class="col">
-      <button class="btn btn-primary">
-        Guardar
+      <button class="btn btn-primary"
+              (click)="cambiarNombre()">
+        Cambiar Nombre
+      </button>
+      &nbsp;
+      <button class="btn btn-primary"
+              (click)="cambiarColor()">
+        Cambiar Color
       </button>
     </div>
   </div>
