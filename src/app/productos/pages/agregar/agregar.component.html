@@ -14,7 +14,7 @@
       <span error-msg
             [color]="color"
             [mensaje]="texto"
-            *ngIf="tieneError('nombre')"></span>
+            [valido]="!tieneError('nombre')"></span>
     </div>
   </div>
 
