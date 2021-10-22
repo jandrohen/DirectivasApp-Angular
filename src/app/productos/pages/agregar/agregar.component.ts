@@ -14,7 +14,7 @@ export class AgregarComponent  {
   texto: string = 'Campo requerido';
 
   miFormulario: FormGroup = this.fb.group({
-    nombre: [ '', Validators.required ]
+    nombre: [ '', Validators.required]
   });
 
 
